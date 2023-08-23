@@ -1,0 +1,46 @@
+# dependencies
+/node_modules
+
+# production
+/cache
+/build
+/typechain
+/artifacts
+/dist
+
+.cache/
+.cache
+.temp
+
+# testing
+/coverage
+dev.*.ts
+dev.ts
+
+# misc
+.DS_Store
+
+# env
+.env.*
+!.env.ex
+!.env.test
+!.env*.ts
+
+# config
+*.config.js
+
+# logs
+log/*
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# key
+*.pem
+
+# keep
+!**/.gitkeep
+!**/*.sample
