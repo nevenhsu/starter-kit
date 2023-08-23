@@ -1,0 +1,37 @@
+{
+  "name": "app",
+  "version": "0.1.0",
+  "author": "Xera",
+  "description": "",
+  "main": "src/index.ts",
+  "private": true,
+  "engines": {
+    "node": ">=18.0"
+  },
+  "scripts": {
+    "ts": "ts-node -r ./.env.ts -r tsconfig-paths/register --transpile-only",
+    "start": "npm run ts -- src/index.ts",
+    "dev": "npm run ts -- src/dev.ts",
+    "test": "mocha -r ts-node/register test/*.ts -r ./.env.test.ts -r tsconfig-paths/register"
+  },
+  "dependencies": {
+    "date-fns": "^2.30.0",
+    "date-fns-tz": "^2.0.0",
+    "dotenv": "^16.3.1",
+    "lodash": "^4.17.21",
+    "winston": "^3.10.0"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.5",
+    "@types/lodash": "^4.14.197",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^20.5.3",
+    "chai": "^4.3.7",
+    "chai-as-promised": "^7.1.1",
+    "gts": "^5.0.1",
+    "mocha": "^10.2.0",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.1.6"
+  }
+}
